@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Data Base Person</string>
+    <string name="sexo">Sex</string>
+    <string name="borrar">Delete</string>
+    <string name="apellido">Last name</string>
+    <string name="buscar">Search</string>
+    <string name="cedula">Identification card</string>
+    <string name="eliminar">Remove</string>
+    <string name="escribir">Write</string>
+    <string name="femenino">Female</string>
+    <string name="guardar">Save</string>
+    <string name="masculino">Male</string>
+    <string name="leer">Read</string>
+    <string name="modificar">Modify</string>
+    <string name="nombre">Name</string>
+    <string name="pasatiempo">Hobby</string>
+    <string name="programar">Program</string>
+    <string name="registrar">Register</string>
+</resources>

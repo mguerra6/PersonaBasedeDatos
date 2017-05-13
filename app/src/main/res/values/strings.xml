@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Persona Base de Datos</string>
+    <string name="registrar">Registrar</string>
+    <string name="buscar">Buscar</string>
+    <string name="cedula">Cedula</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="sexo">Sexo</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="pasatiempo">Pasatiempo</string>
+    <string name="programar">Programar</string>
+    <string name="leer">Leer</string>
+    <string name="escribir">Escribir</string>
+    <string name="guardar">Guardar</string>
+    <string name="modificar">Modificar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="borrar">Borrar</string>
+    <string name="numero">No.</string>
+</resources>
