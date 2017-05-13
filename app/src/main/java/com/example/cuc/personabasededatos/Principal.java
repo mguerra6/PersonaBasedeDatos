@@ -2,8 +2,10 @@ package com.example.cuc.personabasededatos;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ListView;
 
 public class Principal extends AppCompatActivity {
+    private ListView Opciones;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

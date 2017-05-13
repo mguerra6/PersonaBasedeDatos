@@ -1,5 +1,6 @@
 package com.example.cuc.personabasededatos;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
@@ -75,8 +76,7 @@ public class Persona {
     }
 
 
-    public void Guardar(Context contexto)
-    {
+    public void Guardar(Context contexto) {
         //Declarar las variables
         SQLiteDatabase db;
         String sql;
@@ -88,7 +88,7 @@ public class Persona {
         //insertar version 1.0
 
         sql = "INSERT INTO Personas values('"
-                + this.getFoto()+"','"
+                + this.getFoto() + "','"
                 + this.getCedula() + "','"
                 + this.getNombre() + "','"
                 + this.getApellido() + "','"
@@ -96,5 +96,20 @@ public class Persona {
                 + this.getPasatiempo() + "')";
 
         db.execSQL(sql);
+
+        //insertar forma 2
+
+        ContentValues nuevoRegistro = new ContentValues();
+        nuevoRegistro.put("foto", this.getFoto());
+        nuevoRegistro.put("cedula", this.getCedula());
+        nuevoRegistro.put("nombre", this.getNombre());
+        nuevoRegistro.put("apellido", this.getApellido());
+        nuevoRegistro.put("sexo", this.getSexo());
+        nuevoRegistro.put("pasatiempo", this.getPasatiempo());
+
+        db.insert("Personas", null, nuevoRegistro);
+
+        db.close();
+    }
     }
 }
