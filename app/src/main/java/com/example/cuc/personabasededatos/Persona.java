@@ -110,6 +110,6 @@ public class Persona {
         db.insert("Personas", null, nuevoRegistro);
 
         db.close();
-    }
+
     }
 }

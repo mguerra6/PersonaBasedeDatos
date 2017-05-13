@@ -17,4 +17,12 @@
     <string name="eliminar">Eliminar</string>
     <string name="borrar">Borrar</string>
     <string name="numero">No.</string>
+
+    <string name="Listado_en_tabla">Listado en tabla</string>
+    <string name="listado">Listado</string>
+    <string-array name="opciones">
+        <item>@string/registrar</item>
+        <item>@string/Listado_en_tabla</item>
+        <item>@string/listado</item>
+    </string-array>
 </resources>

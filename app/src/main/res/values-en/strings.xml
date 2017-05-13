@@ -17,4 +17,7 @@
     <string name="pasatiempo">Hobby</string>
     <string name="programar">Program</string>
     <string name="registrar">Register</string>
+    <string name="listado">List</string>
+    <string name="numero">No.</string>
+    <string name="Listado_en_tabla">"List in table "</string>
 </resources>
