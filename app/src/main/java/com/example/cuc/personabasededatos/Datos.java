@@ -21,11 +21,11 @@ public class Datos {
         Persona p;
 
         //Abrir conexion
-        PersonasSQLliteOpenhelper aux = new PersonasSQLliteOpenhelper(contexto, "DBPersonas", null, 1);
+        PersonasSQLliteOpenhelper aux = new PersonasSQLliteOpenhelper(contexto, "DBPersonas", null, 2);
         db = aux.getReadableDatabase();
 
         //Cursor
-        sql = "select * from persona";
+        sql = "select * from Personas";
         Cursor c = db.rawQuery(sql, null);
 
 

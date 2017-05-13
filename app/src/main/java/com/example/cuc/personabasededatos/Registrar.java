@@ -116,8 +116,8 @@ public class Registrar extends AppCompatActivity {
             if(chkBailar.isChecked())
             {
                 pasatiempo = getResources().getString(R.string.Bailar) + ", ";
-                pasatiempo = pasatiempo.substring(pasatiempo.length()-1);
             }
+            pasatiempo = pasatiempo.substring(0, pasatiempo.length()-2);
 
             p = new Persona(foto,  cedula, nombre, apellido, sexo, pasatiempo);
             p.Guardar(getApplicationContext());

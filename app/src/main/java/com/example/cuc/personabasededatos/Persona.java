@@ -82,7 +82,7 @@ public class Persona {
         String sql;
 
         //Abrir la conexion de base de datos en modo escritura
-        PersonasSQLliteOpenhelper aux = new PersonasSQLliteOpenhelper(contexto, "DBPersona", null, 1);
+        PersonasSQLliteOpenhelper aux = new PersonasSQLliteOpenhelper(contexto, "DBPersona", null, 2);
         db = aux.getWritableDatabase();
 
         //insertar version 1.0
