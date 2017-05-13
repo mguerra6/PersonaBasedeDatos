@@ -16,7 +16,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:onClick="guardar">
 
         <TextView
             android:text="@string/registrar"
@@ -30,18 +31,16 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="25px">
+            android:layout_height="wrap_content">
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="@string/cedula"
                 android:ems="10"
                 android:id="@+id/txtcedula"
                 android:layout_weight="1"
-                android:textAlignment="center" />
+                android:hint="@string/cedula" />
 
             <Button
                 android:text="@string/buscar"
@@ -54,29 +53,28 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="@string/nombre"
+            android:inputType="textNoSuggestions|textPersonName"
             android:ems="10"
             android:id="@+id/txtnombre"
             android:textAlignment="center"
-            android:textSize="25sp" />
+            android:textSize="16sp"
+            android:hint="@string/nombre" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="@string/apellido"
             android:ems="10"
             android:id="@+id/txtapellido"
             android:textAlignment="center"
-            android:textSize="25sp" />
+            android:textSize="16sp"
+            android:hint="@string/apellido" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView7"
-            android:textAlignment="center"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:text="@string/sexo"
             android:textStyle="normal|bold"
             android:padding="20px" />
@@ -96,7 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/rbmasculino"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:layout_weight="1"
                     android:checked="true" />
 
@@ -105,7 +103,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/rbfemenino"
-                    android:textSize="20sp"
+                    android:textSize="15sp"
                     android:layout_weight="1" />
             </LinearLayout>
 
@@ -116,9 +114,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textView9"
-            android:textAlignment="center"
-            android:textSize="25sp"
-            android:padding="20px" />
+            android:textSize="20sp"
+            android:padding="20px"
+            android:textStyle="normal|bold" />
 
         <CheckBox
             android:text="@string/programar"
@@ -133,7 +131,7 @@
             android:id="@+id/cbleer" />
 
         <CheckBox
-            android:text="@string/escribir"
+            android:text="@string/Bailar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/cbescribir" />
@@ -149,7 +147,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/cdmguardar"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:onClick="guardar" />
 
             <Button
                 android:text="@string/modificar"
@@ -162,7 +161,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:padding="10px">
 
             <Button
@@ -177,7 +176,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/cdmborrar"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:onClick="limpiar" />
         </LinearLayout>
 
     </LinearLayout>

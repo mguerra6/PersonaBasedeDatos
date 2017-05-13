@@ -98,7 +98,7 @@ public class Persona {
         db.execSQL(sql);
 
         //insertar forma 2
-
+/*
         ContentValues nuevoRegistro = new ContentValues();
         nuevoRegistro.put("foto", this.getFoto());
         nuevoRegistro.put("cedula", this.getCedula());
@@ -108,7 +108,8 @@ public class Persona {
         nuevoRegistro.put("pasatiempo", this.getPasatiempo());
 
         db.insert("Personas", null, nuevoRegistro);
-
+*/
+        //Cerra conexion
         db.close();
 
     }

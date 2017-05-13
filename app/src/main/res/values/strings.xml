@@ -20,6 +20,7 @@
 
     <string name="Listado_en_tabla">Listado en tabla</string>
     <string name="listado">Listado</string>
+    <string name="Bailar">bailar</string>
     <string-array name="opciones">
         <item>@string/registrar</item>
         <item>@string/Listado_en_tabla</item>
